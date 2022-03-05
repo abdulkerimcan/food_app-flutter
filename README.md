@@ -1,16 +1,29 @@
-# food_app
+# Food App 
 
 A new Flutter project.
 
-## Getting Started
+## About The Project
 
-This project is a starting point for a Flutter application.
+In this project, the food are shown in a list. When clicking on the food ,a detailed page of the food is shown. <br>
+I use ListView.builder with FutureBuilder. <br>
+If the data we have taken is blank, it will show a blank screen.<br>
+I created a class called Food and kept the features(img url,name,price) of the food in it. <br>
 
-A few resources to get you started if this is your first Flutter project:
+in order to retrieve the data asynchronously, I have created a Future method as follows.
+```dart
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Future<List<Food>> getFood() async {
+    var foodList = <Food>[];
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    return foodList;
+  }
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://user-images.githubusercontent.com/79968953/156892871-5a822585-26db-4963-94bb-3a65f4399aef.png)
+![image](https://user-images.githubusercontent.com/79968953/156892879-0e504fed-7be7-4da2-9c29-7ae938edc1b5.png)
