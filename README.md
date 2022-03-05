@@ -1,6 +1,6 @@
 # Food App 
 
-A new Flutter project.
+A food ordering app.
 
 ## About The Project
 
