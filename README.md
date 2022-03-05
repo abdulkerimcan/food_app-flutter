@@ -7,6 +7,7 @@ A food ordering app.
 In this project, the food are shown in a list. When clicking on the food ,a detailed page of the food is shown. 
 <br> <br>
 ![image](https://user-images.githubusercontent.com/79968953/156892871-5a822585-26db-4963-94bb-3a65f4399aef.png) <br>
+ <br> <br>
 I use ListView.builder with FutureBuilder. <br>
 ```dart
 FutureBuilder<List<Food>>(
