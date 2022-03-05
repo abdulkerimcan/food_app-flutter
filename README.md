@@ -6,8 +6,35 @@ A food ordering app.
 
 In this project, the food are shown in a list. When clicking on the food ,a detailed page of the food is shown. <br>
 I use ListView.builder with FutureBuilder. <br>
+```dart
+FutureBuilder<List<Food>>(
+        future: getFood(),
+        builder: (context, snapshot) {
+        if (snapshot.hasData) {
+            var foodList = snapshot.data;
+            return ListView.builder(
+                .
+                .
+                .
+                .
+                .
+                .
+        }
+```
+
 If the data we have taken is blank, it will show a blank screen.<br>
 I created a class called Food and kept the features(img url,name,price) of the food in it. <br>
+
+```dart
+class Food {
+  int id;
+  String img,name;
+  double price;
+
+  Food(this.id, this.name, this.img, this.price);
+}
+```
+
 
 in order to retrieve the data asynchronously, I have created a Future method as follows.
 ```dart
